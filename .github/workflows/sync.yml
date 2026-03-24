@@ -4,7 +4,7 @@ name: sync
 "on":
   workflow_dispatch:
   schedule:
-    - cron: '45 * * * *'
+    - cron: '48 * * * *'
 
 permissions: {}
 
@@ -16,7 +16,7 @@ jobs:
       shared-common/gh-actions-shared/.github/workflows/gitlab-sync-core.yml@v0.0.40
     with:
       target-org: ${{ github.repository_owner }}
-      target-profile: xf-main
+      target-profile: xf-qubit
       shared-repo: shared-common/gh-actions-shared
       shared-ref: v0.0.40
       bws-version: ${{ vars.BWS_VERSION }}

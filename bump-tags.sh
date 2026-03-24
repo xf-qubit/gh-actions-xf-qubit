@@ -45,8 +45,8 @@ if [[ ! "$TAG" =~ ^[A-Za-z0-9][A-Za-z0-9._-]*$ ]]; then
 fi
 
 ROOT="$(git rev-parse --show-toplevel)"
-if [[ "$(basename "$ROOT")" != "gh-actions-xf-main" ]]; then
-  echo "Error: must run from gh-actions-xf-main repo." >&2
+if [[ "$(basename "$ROOT")" != "gh-actions-xf-qubit" ]]; then
+  echo "Error: must run from gh-actions-xf-qubit repo." >&2
   exit 1
 fi
 
